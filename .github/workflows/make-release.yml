@@ -6,7 +6,7 @@ on:
       - '*'
 env:
   GITHUB_TOKEN: ${{ github.token }}
-  URL: https://raw.githubusercontent.com/DevOps-and-Cloud-based-Software/week2/${{ github.ref_name }}
+  URL: https://raw.githubusercontent.com/DevOps-and-Cloud-based-Software/assignment3/${{ github.ref_name }}
 
 jobs:
   publish:
@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v2
         id: upload-document
         with:
-          name: 'week2Lab'
+          name: 'lab_assignment_3.pdf'
           path: ${{ steps.publish-document.outputs.pdf }}
 
       - name: Upload README_WITH_LINKS.md
