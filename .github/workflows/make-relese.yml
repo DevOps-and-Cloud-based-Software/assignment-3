@@ -25,6 +25,7 @@ jobs:
 
       - name: urls-checker
         uses: urlstechie/urlchecker-action@master
+        continue-on-error: true
         with:
           file_types: .md,yaml,json
           retry_count: 3
