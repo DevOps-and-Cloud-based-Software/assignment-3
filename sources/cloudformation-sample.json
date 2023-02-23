@@ -102,6 +102,7 @@
 
         "WebServerInstance": {
             "Type": "AWS::EC2::Instance",
+            "DeletionPolicy" : "Delete",
             "Metadata": {
                 "AWS::CloudFormation::Init": {
                     "configSets": {
@@ -296,6 +297,7 @@
 
         "WebServerSecurityGroup": {
             "Type": "AWS::EC2::SecurityGroup",
+            "DeletionPolicy" : "Delete",
             "Properties": {
                 "GroupDescription": "Enable HTTP access via port 80",
                 "SecurityGroupIngress": [
