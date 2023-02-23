@@ -310,7 +310,7 @@ a) Go to CloudFormation → Create new Stack
 
 If you want to design own template you can go to Design template and start working. But for this exercise go with second option:
 
-“Choose a template” → “Upload a template to Amazon S3” → Choose file “practice04_cloudformation-sample.json”  to upload (File `practice04_cloudformation-sample.json` file is provided on Canvas). If you select this option new S3 bucket will be created to store your template. Be aware of the extra charges.
+“Choose a template” → “Upload a template to Amazon S3” → Choose file “practice04_cloudformation-sample.json”  to upload (File [`practice04_cloudformation-sample.json`](sources/cloudformation-sample.json) ). If you select this option new S3 bucket will be created to store your template. Be aware of the extra charges.
 
 **Note:** If you choose to upload file, CloudFormation still creates S3 bucket to put file there.
 
