@@ -41,7 +41,8 @@ b) Install Apache webserver with PHP (for testing)
 
 ```shell
 sudo yum update -y
-sudo yum install -y httpd.x86_64 php56 php56-mysqlnd
+sudo yum install -y httpd.x86_64
+sudo amazon-linux-extras install -y php7.2
 ```
 
 c) Start the HTTP server
@@ -85,21 +86,22 @@ b) Step 2: Specify DB details -> You can choose DB engine version. In Settings f
 - Master username:  (remember these details)
 - Master password:  (remember these details)
 
-c) Step 3: Configure advanced settings
+c) Step 3: Connectivity: chose “Connect to an EC2 compute resource” and select the instance launched in **Part A**.
 
-Network & Security tab: Leave the default options
-Database options tab: choose a Database name and IAM DB authentication : NO
-Backup tab: No preference (change to 0/1 days - to reduce the charges for logs)
-Monitoring tab: Enhanced monitoring -- Choose Disable
-Log exports tab: select General log
-Maintenance tab: select “Enable auto minor version upgrade” and “No preference”
-Deletion protection:  you can choose to protect database or leave it. As this just for testing, you can uncheck so that Database can be deleted.
+d) Step 4: Additional configuration
 
-d) Create database will take some time. Check the status in RDS → Databases → `You_Database_name`
+- Database options: choose a Database name
+- Backup: No preference (change to 0/1 days - to reduce the charges for logs)
+- Log exports tab: select General log
+- Maintenance tab: select “Enable auto minor version upgrade” and “No preference”
+- Deletion protection:  you can choose to protect database or leave it. As this just for testing, you can uncheck so that Database can be deleted.
+
+
+e) Create database will take some time. Check the status in RDS → Databases → `You_Database_name`
 
 ![RDS screenshot](images/rds_screenshot.png)
 
-e) Once it is created, note down the endpoint and port from “connectivity & Security” tab
+f) Once it is created, note down the endpoint and port from “connectivity & Security” tab
 
 
 ### Part D. Connect RDS DB instance to Web Server
