@@ -1,4 +1,4 @@
-# Practice 03 Services deployment on AWS using CloudFormation
+# Lab assignment 3: CloudFormation and Template
 
 ## Objectives
 
