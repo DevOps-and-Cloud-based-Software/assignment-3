@@ -298,7 +298,7 @@ b) LAMP webserver installation as you did in **Part B**
 
 c) Connect RDS DB instance to Web Server as you did in **Part D**
 
-d) Then follow the Elastic Load Balancer steps from **Week 1 - Part E**
+d) Then follow the Elastic Load Balancer steps from **Lab assignment 2 - Block 2**
 
 
 ## Block 2. Using CloudFormation for creation and configuration of the Sample Webserver
