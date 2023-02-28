@@ -90,7 +90,7 @@ c) Step 3: Connectivity: chose “Connect to an EC2 compute resource” and sele
 
 d) Step 4: Additional configuration
 
-- Database options: choose a Database name
+- Database options: choose an “Initial database name” and write it down
 - Backup: No preference (change to 0/1 days - to reduce the charges for logs)
 - Log exports tab: select General log
 - Maintenance tab: select “Enable auto minor version upgrade” and “No preference”
@@ -114,15 +114,15 @@ sudo mkdir inc
 cd inc
 ```
 
-a) Create a file with your DB credentials to connect `dbinfo.inc` on EC2 instance at the following path `/var/www/inc/dbinfo.inc`. Change `endpoint` with endpoint noted in **Part C-e** and `master password` with password used to create the database in **Part C-b** (Master password )
+a) Create a file with your DB credentials to connect `dbinfo.inc` on EC2 instance at the following path `/var/www/inc/dbinfo.inc`.Change `endpoint` with endpoint noted in **Part C-e** and `Master username`, `Master password` and `Initial database name` with the info from **Part C-b and d**.
 
 ```php
 <?php
 
 define('DB_SERVER', 'endpoint');
-define('DB_USERNAME', 'tutorial_user'); //master user name
-define('DB_PASSWORD', 'master password');
-define('DB_DATABASE', 'sample');
+define('DB_USERNAME', 'Master username');
+define('DB_PASSWORD', 'Master password');
+define('DB_DATABASE', 'Initial database name');
 
 ?>
 ```
