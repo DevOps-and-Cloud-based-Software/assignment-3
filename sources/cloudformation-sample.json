@@ -166,7 +166,7 @@
                                         "      {\n",
                                         "        print \"EC2 instance-id = \" . $instanceid . \"<br />\";\n",
                                         "      }\n",
-                                        "      $Database   = \"", { "Ref": "DBName" }, "\";\n",
+                                        "      $Database   = \"localhost\";\n",
                                         "      $DBUser     = \"", { "Ref": "DBUser" }, "\";\n",
                                         "      $DBPassword = \"", { "Ref": "DBPassword" }, "\";\n",
                                         "      print \"Database = \" . $Database . \"<br />\";\n",
