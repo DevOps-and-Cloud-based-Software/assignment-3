@@ -19,7 +19,7 @@ This assignment is based on the AWS Academy course Cloud Computing Foundation La
 
 - This lab will use your knowledge and experience gained from Modules 4-8 and 10 and previous practices 2 and 3.
 - You need to re-visit Module 10 -  Auto Scaling and Monitoring and Lab 6 in places where CloudFormation is used.
-- Read and learn how to set up an SSH client to connect to an EC2 instance and creating a tunnel to connect to connect to the RDS Database server.  
+- Read and learn how to set up an SSH client to connect to an EC2 instance and creating a tunnel to connect to the RDS Database server.  
   **Note.** Guidelines how to setup SSH client and connect to EC2 with SSH is provided on Canvas.
 
 
