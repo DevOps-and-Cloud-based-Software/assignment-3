@@ -1,4 +1,6 @@
-# Lab assignment 3: CloudFormation and Template
+# DevOps and Cloud Based Software  
+## Lab 03: CloudFormation and Template
+University of Amsterdam
 
 ## Objectives
 
