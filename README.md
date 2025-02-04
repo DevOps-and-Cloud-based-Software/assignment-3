@@ -5,7 +5,7 @@ University of Amsterdam
 # Objectives
 In this practice, you will experiment with the manual services deployment and configuration using the CloudFormation template for automatic service deployment.
 
-The following resources are to be deployed and interconnected:
+The following resources will be deployed and interconnected:
 
 - Launch EC2 instances
 - Deploy a web server on EC2 instance
