@@ -2,7 +2,7 @@
 ## Lab 1-3: CloudFormation and Template
 University of Amsterdam
 
-## Objectives
+# Objectives
 In this practice, you will experiment with the manual services deployment and configuration using the CloudFormation template for automatic service deployment.
 
 The following resources are to be deployed and interconnected:
@@ -13,7 +13,7 @@ The following resources are to be deployed and interconnected:
 - Create a Snapshot for a backup
 - Create Elastic Load Balancer
 
-## Learning materials and learning platform
+# Background
 
 This assignment is based on the AWS Academy course Cloud Computing Foundation Lab 3 EC2, Lab 5 RDS, and Lab 6 Scale & Load Balance your Architecture with additional tasks to experiment with CloudFormation functionality.
 
