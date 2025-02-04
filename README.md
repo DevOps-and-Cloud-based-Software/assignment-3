@@ -1,12 +1,12 @@
 # DevOps and Cloud Based Software  
-## Lab 03: CloudFormation and Template
+## Lab 1-3: CloudFormation and Template
 University of Amsterdam
 
 ## Objectives
 
-In this practice, you will experiment with the manual services deployment and configuration using CloudFormation template for automatic service deployment.
+In this practice, you will experiment with the manual services deployment and configuration using the CloudFormation template for automatic service deployment.
 
-The following resources to be deployed and interconnected
+The following resources are to be deployed and interconnected:
 
 - Launch EC2 instances
 - Deploy a web server on EC2 instance
@@ -16,11 +16,11 @@ The following resources to be deployed and interconnected
 
 ## Learning materials and learning platform
 
-This assignment is based on the AWS Academy course Cloud Computing Foundation Lab 3 EC2, Lab 5 RDS and Lab 6 Scale & Load Balance your Architecture with additional tasks to experiment with CloudFormation functionality.
+This assignment is based on the AWS Academy course Cloud Computing Foundation Lab 3 EC2, Lab 5 RDS, and Lab 6 Scale & Load Balance your Architecture with additional tasks to experiment with CloudFormation functionality.
 
-- This lab will use your knowledge and experienced gained from Modules 4-8 and 10 and previous practices 2 and 3.
+- This lab will use your knowledge and experience gained from Modules 4-8 and 10 and previous practices 2 and 3.
 - You need to re-visit Module 10 -  Auto Scaling and Monitoring and Lab 6 in places where CloudFormation is used.
-- Read and learn how to setup SSH client for connecting to EC2 instance and tunnel to connect to RDS Database server.  
+- Read and learn how to set up an SSH client to connect to an EC2 instance and tunnel to connect to the RDS Database server.  
   **Note.** Guidelines how to setup SSH client and connect to EC2 with SSH is provided on Canvas.
 
 
@@ -33,13 +33,13 @@ Launch an EC2 instance with “Amazon Linux 2 AMI (HVM)” (e.g. selecting t2.mi
 
 (Note. You can choose any other OS instances, if you are comfortable.)
 
-Make sure if your Security Group policies are open for HTTP (port 80). In case it is not open, edit Security Group policy and add HTTP - TCP rule for your specific IP for testing or 0.0.0.0/0 for everyone to access. (This helps only when you have something running. Wait until **Part B - step d**, to test it)
+Make sure your Security Group policies are open for HTTP (port 80). In case it is not open, edit the Security Group policy and add an HTTP - TCP rule for your specific IP for testing or 0.0.0.0/0 for everyone to access. (This helps only when you have something running. Wait until **Part B - step d**, to test it)
 
 ### Part B. Create a web server (LAMP server)
 
-a) Connect to ec2 instance through ssh (So, all commands below are for the deployed EC2 instance)
+a) Connect to the ec2 instance through SSH (So, all commands below are for the deployed EC2 instance)
 
-b) Install Apache webserver with PHP (for testing)
+b) Install Apache web server with PHP (for testing)
 
 ```shell
 sudo yum update -y
@@ -349,13 +349,13 @@ Describe your experience in the report.
 
 Note: To answer self-study questions, you may use the lecture as a starting point for further study, however additional research and readings will be required.
 
-1. How is section Parameters is used in the CloudFormation template? Do you need to put passwords in the template? Is it secure?
+1. How are section Parameters used in the CloudFormation template? Do you need to put passwords in the template? Is it secure?
 
-2. What operations the CloudFormation executes automatically and what instruction you need to define yourself? How do you do this?
+2. What operations does the CloudFormation execute automatically, and what instruction do you need to define yourself? How do you do this?
 
-3. Why and for what purpose you need to specify SSH key? How do you do this? Why CloudFormation require an existing key?
+3. Why and for what purpose do you need to specify an SSH key? How do you do this? Why CloudFormation require an existing key?
 
-A. You need to create a fleet of webservers and other resources. What is the structure of CloudFormation template for this case? What are solutions for this with using CloudFormation and/or other cloud automation tools? Provide an example what functionalities available in Ansible (e.g. modules and/or tasks).
+A. You need to create a fleet of webservers and other resources. What is the structure of CloudFormation template for this case? What are solutions for this with using CloudFormation and/or other cloud automation tools? Provide an example of what functionalities are available in Ansible (e.g., modules and/or tasks).
 
 B. Which CloudFormation functions can be done in Ansible and which cannot? Provide example of both. How do Ansible and CloudFormation interact during the deployment process?
 
@@ -366,11 +366,9 @@ Prepare your report and include the following information:
 
 1) Document your experiments in Parts B-F, including the configuration of your instances and services and few screenshots demonstrating webserver access via Internet.
 2) The same for Part G Webserver deployment with the CloudFormation template.
-3) Compare two approaches: manual and with the CloudFormation.
+3) Compare two approaches: manual and using CloudFormation.
 4) Provide a summary of experience and observations
-5) Answer at least 3 Self-study questions including at least one question from groups {1,2,3} and {A,B}
-
-Submit your practice report to Canvas Assignment 4 link by the end of Monday in week 5.
+5) Answer at least 3 Self-study questions, including at least one question from groups {1,2,3} and {A,B}
 
 
 ## For reference: List of AWS Academy class Modules and Labs
