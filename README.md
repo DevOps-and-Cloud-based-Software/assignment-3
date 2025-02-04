@@ -3,7 +3,6 @@
 University of Amsterdam
 
 ## Objectives
-
 In this practice, you will experiment with the manual services deployment and configuration using the CloudFormation template for automatic service deployment.
 
 The following resources are to be deployed and interconnected:
