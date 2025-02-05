@@ -2,19 +2,20 @@
 
 ## Objectives
 
-In this practice, you will experiment with the manual services deployment and configuration using CloudFormation template for automatic service deployment.
+In this practice, you will experiment with manual service deployment and configuration using a **CloudFormation template** for automatic service deployment.  
 
-The following resources to be deployed and interconnected
+### Resources to be deployed and interconnected:  
 
-- Launch EC2 instances
-- Deploy a web server on EC2 instance
-- Create a RDS server
-- Create a Snapshot for a backup
-- Create Elastic Load Balancer
+- Launch **EC2 instances**  
+- Deploy a **web server** on an EC2 instance  
+- Create an **RDS server**  
+- Create a **Snapshot** for backup  
+- Create an **Elastic Load Balancer**  
 
 ## Learning materials and learning platform
 
-This assignment is based on the AWS Academy course Cloud Computing Foundation Lab 3 EC2, Lab 5 RDS and Lab 6 Scale & Load Balance your Architecture with additional tasks to experiment with CloudFormation functionality.
+This assignment is based on the AWS Academy course Cloud Computing Foundation Lab 3 EC2, Lab 5 RDS and Lab 6 Scale & Load Balance your Architecture with additional
+tasks to experiment with CloudFormation functionality.
 
 - This lab will use your knowledge and experienced gained from Modules 4-8 and 10 and previous practices 2 and 3.
 - You need to re-visit Module 10 -  Auto Scaling and Monitoring and Lab 6 in places where CloudFormation is used.
