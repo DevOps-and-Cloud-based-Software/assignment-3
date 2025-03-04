@@ -271,26 +271,21 @@ b) From “Actions” on top right drop-down menu select “Take snapshot” to 
 
 ![RDS snapshot](images/rds_snapshot.png)
 
-
 c) Give a name to the snapshot and save it. (it will take some time depending on the size of database)
 
-d) “You can not restore the database to the same name - if the database already exists in your AWS account”
+To restore the database from the snapshot:
 
-- To restore the database from snapshot. Go to RDS console → snapshots
-1. Select appropriate snapshot --> on top right “Actions” → “Restore snapshot”
-2. Remember to double to check the all the parameters:
-    - Change “DB Instance Class”:  appropriate size (In real time scenarios it might be not a good option to change, just to make sure you will not be charged anything for creating large DB instance)
-    - Choose other parameters appropriately to restore the database.
+a) Go to RDS console → snapshots
 
-e) %% Did not find anything to save snapshots to S3
+b) Select appropriate snapshot --> on top right “Actions” → “Restore snapshot”
 
-f) ## This works to shit the existing database to Amazon services, “You can not restore the database to same name”
+c) Remember to double to check the all the parameters:
 
-- select “Restore from S3”
-1. Select engine - Select MySQL (As we have created MySQL RDS server)
-2. Specify source backup details:  
-   Choose sql version, S3 bucket from which backup needs to be restored.  
-   IAM role: NO
+- Change “DB Instance Class”:  appropriate size (In real time scenarios it might be not a good option to change, just to make sure you will not be charged anything for creating large DB instance)
+- Choose other parameters appropriately to restore the database.
+
+> [!NOTE]
+> You can not restore the database to the same name if the database already exists in your AWS account
 
 
 ### Part F. Create Elastic Load Balancer
